@@ -13,3 +13,10 @@ export const repository = Object.entries(
     filename: path.slice(path.lastIndexOf('/') + 1),
     buffer: buffer as ArrayBuffer,
 }))
+
+export { default as engineConfiguration } from 'sonolus-mania-engine/EngineConfiguration?arraybuffer'
+export { default as enginePlayData } from 'sonolus-mania-engine/EnginePlayData?arraybuffer'
+export { default as enginePreviewData } from 'sonolus-mania-engine/EnginePreviewData?arraybuffer'
+export { default as engineThumbnail } from 'sonolus-mania-engine/EngineThumbnail?arraybuffer'
+export { default as engineTutorialData } from 'sonolus-mania-engine/EngineTutorialData?arraybuffer'
+export { default as engineWatchData } from 'sonolus-mania-engine/EngineWatchData?arraybuffer'
