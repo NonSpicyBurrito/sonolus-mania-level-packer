@@ -115,9 +115,14 @@ const onClose = () => {
 
             <VFileField v-model="preview" label="Preview" />
 
-            <VFileField v-model="chart" label="Chart (OSU)" accept=".osu,.txt" />
+            <VFileField v-model="chart" label="Chart (OSU)" accept=".osu,.txt" required />
 
-            <VNumberField v-model="offset" label="Offset" placeholder="Enter level offset..." />
+            <VNumberField
+                v-model="offset"
+                label="Offset"
+                placeholder="Enter level offset..."
+                required
+            />
 
             <VTextAreaField
                 v-model="description"
